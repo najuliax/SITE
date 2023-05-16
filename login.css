@@ -1,0 +1,39 @@
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid rgb(235, 227, 227);
+  background-color: #e67a7a;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #f19ab4;
+  color: rgb(253, 252, 252);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+color 
