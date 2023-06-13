@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Localização</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Localização</h2>
+        <form>
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+            
+            <label for="residencia">Tipo de Residência:</label>
+            <select id="residencia" name="residencia" required>
+                <option value="casa">Casa</option>
+                <option value="condominio">Condomínio</option>
+            </select>
+            
+            <label for="numero">Número da Casa:</label>
+            <input type="text" id="numero" name="numero" required>
+            
+            <br>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+</body>
+</html>
+
 
