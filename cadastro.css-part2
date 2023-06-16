@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffa3dc
+    background-color:rgb(245, 169, 200)
 }
 
 .container {
@@ -28,17 +28,20 @@ input[type="text"],
 select {
     width: 100%;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
 }
 
 input[type="submit"] {
-    background-color: #f327c7;
+    background-color: #e65aa7;
     color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
 }
+
+
+
 
 
