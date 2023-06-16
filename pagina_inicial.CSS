@@ -1,1 +1,95 @@
+/* Estilos do cabeçalho */
+header {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+/* Estilos do container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilo do logo */
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* Estilo da barra de pesquisa */
+.search input[type="text"] {
+  margin-top: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.search button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #f2f2f2;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 40px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+#map {
+  height: 170px;
+  width: 150%;
+  
+}
+
+h1.small {
+  font-size: 16px; /* Tamanho diminuído */
+}
+
+
+
+
 
