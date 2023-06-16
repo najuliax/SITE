@@ -1,4 +1,4 @@
- body {
+body {
   font-family: Arial, sans-serif;
   background-color: rgb(245, 169, 200);  
   padding: 20px;
@@ -33,12 +33,12 @@ h1 {
 .form-group input[type="password"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
 
 .form-group input[type="submit"] {
-  background-color: #eb8596;
+  background-color: #e65aa7;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -47,3 +47,5 @@ h1 {
 }
 
 
+ 
+ 
