@@ -1,6 +1,6 @@
 /* Estilos do cabeçalho */
 header {
-  background-color: #f2f2f2;
+  background-color: #ffb8b8;
   padding: 20px 0;
 }
 
@@ -86,10 +86,21 @@ nav ul li a:hover::after {
 }
 
 h1.small {
-  font-size: 16px; /* Tamanho diminuído */
+  font-size: 19px; /* Tamanho diminuído */
 }
 
+.lucas {
+  display: flex;
+  justify-content: space-between;
+}
 
+.card {
+  flex: 1;
+  margin-right: 20px;
+}
 
-
+.card img {
+  width: 100%;
+  height: auto;
+}
 
