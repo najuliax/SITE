@@ -1,10 +1,4 @@
-/* Estilos do cabeçalho */
-header {
-  background-color: #ffb8b8;
-  padding: 20px 0;
-}
 
-/* Estilos do container */
 .container {
   display: flex;
   flex-direction: column;
@@ -15,8 +9,10 @@ header {
 
 /* Estilo do logo */
 .logo img {
-  width: 100px;
+  width: 160px;
   height: auto;
+
+  
 }
 
 /* Estilo da barra de pesquisa */
@@ -30,7 +26,7 @@ header {
 .search button {
   margin-top: 10px;
   padding: 5px 10px;
-  background-color: #333;
+  background-color: rgb(41, 41, 41);
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -39,7 +35,7 @@ header {
 
 /* Estilos do cabeçalho */
 header {
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 nav ul {
@@ -61,7 +57,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ff0000;
+  color: #ff9999;
 }
 
 nav ul li a::after {
@@ -71,7 +67,7 @@ nav ul li a::after {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #333;
+  background-color: rgb(0, 0, 0);
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
@@ -81,7 +77,7 @@ nav ul li a:hover::after {
 }
 #map {
   height: 170px;
-  width: 150%;
+  width: 100%;
   
 }
 
@@ -89,7 +85,8 @@ h1.small {
   font-size: 19px; /* Tamanho diminuído */
 }
 
-.lucas {
+.all-img {
+
   display: flex;
   justify-content: space-between;
 }
@@ -102,5 +99,22 @@ h1.small {
 .card img {
   width: 100%;
   height: auto;
+}
+
+
+.menu-icon {
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: #ffffff;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.aaa {
+  margin-left: 10px; /* ou o valor desejado para separação entre a imagem e o ícone */
 }
 
