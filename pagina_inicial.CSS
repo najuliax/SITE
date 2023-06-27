@@ -1,70 +1,94 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>enjoei t</title>
-  <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-</head>
-
-<body>
-  <header>
-    <div class="container">
-  <div class="logo">
-    <img src="https://i.imgur.com/lUrcPBW.png" title="logo" />
-  </div>
-  <div class="search">
-    <input type="text" placeholder="Pesquisar...">
-    <button type="submit">Buscar</button>
-  </div>
-  <div class="aaa">
-    <i class="fas fa-bars menu-icon"></i>
-  </div>
-</div>
-
-    <nav>
-      <ul>
-        <li><a href="#">roupas</a></li>
-        <li><a href="#">brinquedos</a></li>
-        <li><a href="#">livros</a></li>
-        <li><a href="#">sapatos</a></li>
-        <li><a href="#">acessorios</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-
-  <div id="map"></div>
-  <h1 class="small">ache uma troca perto de você!</h1>
-
-<div class="all-img">
-
-  <div class="card">
-    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdd0f02f-1d6a-448f-9ed7-83bf284f6697/d662qo8-213f6f31-717a-465a-b679-33d080118484.png/v1/fill/w_368,h_515/vestido_png____by_geneeditions_d662qo8-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTE1IiwicGF0aCI6IlwvZlwvY2RkMGYwMmYtMWQ2YS00NDhmLTllZDctODNiZjI4NGY2Njk3XC9kNjYycW84LTIxM2Y2ZjMxLTcxN2EtNDY1YS1iNjc5LTMzZDA4MDExODQ4NC5wbmciLCJ3aWR0aCI6Ijw9MzY4In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.sWuEWd4qvN36kjtDezIqnePVg3-BGWMnu0mLUFXRzEw">
-  </div>
-
-  <div class="card">
-    <img src="https://w7.pngwing.com/pngs/917/377/png-transparent-court-shoe-patent-leather-high-heeled-footwear-louboutin-miscellaneous-leather-court-shoe-thumbnail.png" alt="Imagem 2">
-  </div>
-
-  <div class="card">
-    <img src="https://chatadegalocha.com/wp-content/uploads/2021/04/71iH9a7d3RL.jpg" alt="Imagem 3">
-  </div>
-
-  <div class="card">
-    <img src="https://thumbnail.imgbin.com/3/21/10/imgbin-carrinho-de-brinquedo-toy-model-car-amazon-com-car-YE62GcJWyaJv9Ezf89c0s2ybn_t.jpg" alt="Imagem 4">
-  </div>
-
-  
+.logo img {
+  width: 160px;
+  height: auto
+  }
 
 
+.search input[type="text"] {
+  margin-top: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+.search button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: rgb(41, 41, 41);
+  color: rgba(240, 230, 230, 0.699);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
-</div>
-</body>
-</html>
+header {
+  background-color: rgb(255, 255, 255);
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 40px;
+}
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(233, 147, 147);
+  position: relative;
+}
+nav ul li a:hover {
+  color: #ff9999;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+#map {
+  height: 170px;
+  width: 100%;
+
+}
+
+h1.small {
+  font-size: 19px; 
+}
+
+.menu-icon {
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+  margin-left: 460px;
+  background-color: #ffffff;
+  margin-top: 90px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.image-vestido {
+  height: 30px;
+  width: 30px;
+}
