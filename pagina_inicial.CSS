@@ -1,3 +1,4 @@
+
 .container {
   display: flex;
   flex-direction: column;
@@ -12,21 +13,20 @@
   }
 
 
-.search input[type="text"] {
-  margin-top: 10px;
-  padding: 5px;
-  border: none;
-  border-radius: 3px;
+button[type="submit"] {
+  background-color: #161212; 
+  color: #cac3c3; 
+  border: none; 
+  padding: 8px 12px; 
+  border-radius: 3px; 
+  cursor: pointer; 
 }
-.search button {
-  margin-top: 10px;
-  padding: 5px 10px;
-  background-color: rgb(41, 41, 41);
-  color: rgba(240, 230, 230, 0.699);
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
+
+
+button[type="submit"] span {
+  color: #444040; 
 }
+
 
 header {
   background-color: rgb(255, 255, 255);
@@ -76,19 +76,29 @@ h1.small {
 }
 
 .menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   font-size: 15px;
   color: #555;
   cursor: pointer;
-  margin-left: 460px;
   background-color: #ffffff;
-  margin-top: 90px;
 }
+
 .logo {
   display: flex;
   align-items: center;
 }
 
-.image-vestido {
-  height: 30px;
-  width: 30px;
+.image-vestido {.image-vestido {
+  position: relative; 
+  width: 405px; 
+  height: 552px; 
+}
+
+.image-vestido img {
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+}
 }
