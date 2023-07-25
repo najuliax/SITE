@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enjoei Troquei produto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="https://img.ltwebstatic.com/images3_pi/2021/08/13/1628824920ad398184c415baad7c0a30d207cee338_thumbnail_600x.jpg" alt="Produto">
+    </div>
+    <div class="product-info">
+      <h1>Cropped regata</h1>
+      <p>composto por 95% poliester e 5% elastano.</p>
+      <p> Produto na cor rosa, tamanho P, usado poucas vezes. Peça única.</p>
+      <p class="price">Preço: R$ 29,99</p>
+      <button class="buy-button">Comprar</button>
+      <button class="heart-button">
+        <span class="heart-icon">❤️</span>
+        <span class="button-text">match</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
