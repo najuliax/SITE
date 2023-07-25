@@ -1,0 +1,5 @@
+const heartButton = document.querySelector('.heart-button');
+
+heartButton.addEventListener('click', () => {
+  heartButton.classList.toggle('clicked');
+});
