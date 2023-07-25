@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.product-image img {
+  max-width: 300px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px;
+}
+
+.product-info {
+  margin-left: 20px;
+}
+
+.product-info h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-info p {
+  margin: 10px 0;
+}
+
+.product-info .price {
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(245, 169, 200);
+}
+
+.heart-icon {
+  font-size: 24px;
+  margin-right: 5px;
+  transition: color 0.2s;
+}
+
+.button-text {
+  transition: color 0.2s;
+}
+
+.heart-button.clicked .heart-icon {
+  color: rgb(223, 11, 57);
+
+}
+
+.heart-button.clicked .button-text {
+  color: rgb(223, 11, 57);
+  
+}
