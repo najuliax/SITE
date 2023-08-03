@@ -8,4 +8,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.marker([-25.5377509, -49.255991,17]).addTo(map)
   .bindPopup('Meu Local')
   .openPopup();
-Footer
+
+  function changeImage(element, newImage) {
+  element.src = newImage;
+}
+
+function restoreImage(element, originalImage) {
+  element.src = originalImage;
+}
