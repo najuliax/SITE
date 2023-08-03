@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+
+
+<div class="cart">
+  <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+  <span class="cart-count">0</span>
+</div>
+
+<div class="icon-button">
+  <i class="fas fa-bars"></i>
+
+    <ul>
+     <div class="options">
+  <ul>
+    <li><a href="#">Opção 1</a></li>
+    <li><a href="#">Opção 2</a></li>
+    <li><a href="#">Opção 3</a></li>
+    <li><a href="#">Opção 4</a></li>
+  </ul>
+</div>
+
+</div>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +45,7 @@
     <input type="text" placeholder="Pesquisar...">
     <button type="submit">Buscar</button>
   </div>
-  <div class="config">
-    <i class="fas fa-bars menu-icon"></i>
-  </div>
+ 
 </div>
 
     <nav>
@@ -46,9 +66,126 @@
   
   <h1 class="small">ache uma troca perto de você!</h1>
 
-  <div class="image-vestido">
-  <img src="https://img.ltwebstatic.com/images3_pi/2023/05/31/16855379345ced3b1fd2ab59764ee9689a8bb325c1_thumbnail_405x552.webp" alt="Imagem">
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://img.ltwebstatic.com/images3_pi/2022/11/17/16686481857d5b64ab1a14df2745204665bb80d169_thumbnail_600x.jpg" alt="Produto 1" class="product-image" onmouseover="changeImage(this, 'https://img.ltwebstatic.com/images3_pi/2022/11/17/166864818976c2798968dbc9956c294040bc4f526b_thumbnail_600x.webp')" onmouseout="restoreImage(this, 'https://img.ltwebstatic.com/images3_pi/2022/11/17/16686481857d5b64ab1a14df2745204665bb80d169_thumbnail_600x.jpg')">
+  </div>
+  <h3>vestido de brilho</h3>
+  <p>R$ 89,99</p>
+   <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
 
+
+  
+
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://img.ltwebstatic.com/images3_pi/2021/11/06/1636169438534a04a23993f706968f1d0cd2b7b236_thumbnail_600x.webp" alt="Produto 2" class="product-image" onmouseover="changeImage(this, 'https://img.ltwebstatic.com/images3_pi/2021/11/06/163616944080500fb114101115443b4a6278b5f821_thumbnail_600x.webp')" onmouseout="restoreImage(this, 'https://img.ltwebstatic.com/images3_pi/2021/11/06/1636169438534a04a23993f706968f1d0cd2b7b236_thumbnail_600x.webp')">
+  </div>
+  <h3>short saia</h3>
+  <p>R$ 29,99</p>
+  <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
+
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://img.ltwebstatic.com/images3_pi/2022/12/16/1671170368db4c81a688df904f47e53e0341543daa_thumbnail_600x.jpg" alt="" class="product-image" onmouseover="changeImage(this, 'https://img.ltwebstatic.com/images3_pi/2022/11/24/16692525670fadd08769f917df8b30aae07eb59378_thumbnail_600x.webp')" onmouseout="restoreImage(this, 'https://img.ltwebstatic.com/images3_pi/2022/12/16/1671170368db4c81a688df904f47e53e0341543daa_thumbnail_600x.jpg')">
+  </div>
+  <h3>cropped lantejoula</h3>
+  <p>R$ 39,99</p>
+  <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
+
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://img.ltwebstatic.com/images3_pi/2023/05/04/1683195780433f3e06caab65ae41577936a0df3e32_thumbnail_600x.jpg" alt="Produto 4" class="product-image" onmouseover="changeImage(this, 'https://img.ltwebstatic.com/images3_pi/2023/05/04/1683195788bc6029ac0115fb8c119ec3c0bad1f439_thumbnail_600x.webp')" onmouseout="restoreImage(this, 'https://img.ltwebstatic.com/images3_pi/2023/05/04/1683195780433f3e06caab65ae41577936a0df3e32_thumbnail_600x.jpg')">
+  </div>
+  <h3>camisa masculina</h3>
+  <p>R$ 49,99</p>
+  <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
+
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://img.ltwebstatic.com/images3_pi/2022/10/08/1665213496e281049c1b03cb1f1586dac48f84a94b_thumbnail_600x.jpg" alt="Produto 5" class="product-image" onmouseover="changeImage(this, 'https://img.ltwebstatic.com/images3_pi/2022/10/08/166521349786b8f80e13a7dd2bf2ff168c89d8e9c8_thumbnail_600x.webp')" onmouseout="restoreImage(this, 'https://img.ltwebstatic.com/images3_pi/2022/10/08/1665213496e281049c1b03cb1f1586dac48f84a94b_thumbnail_600x.jpg')">
+  </div>
+  <h3>boné</h3>
+  <p>R$ 29,99</p>
+  <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
+
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://img.ltwebstatic.com/images3_pi/2022/09/20/16636688631346adb9ea39bbf45f6127e029e347e1_thumbnail_600x.jpg" alt="Produto 6" class="product-image" onmouseover="changeImage(this, 'https://img.ltwebstatic.com/images3_pi/2022/09/20/1663668934dad0ca864d220f92393cecde128484f8_thumbnail_600x.webp')" onmouseout="restoreImage(this, 'https://img.ltwebstatic.com/images3_pi/2022/09/20/16636688631346adb9ea39bbf45f6127e029e347e1_thumbnail_600x.jpg')">
+  </div>
+  <h3>touca e luvas</h3>
+  <p>R$ 30,95</p>
+  <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
+
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://rihappy.vtexassets.com/arquivos/ids/5761905-400-400/Patinete-Dobravel-Com-Led---Jurassic-World---Jw-T-rex----Laranja---Froes-1.jpg?v=638209680876070000" alt="Produto 6" class="product-image" onmouseover="changeImage(this, 'https://rihappy.vtexassets.com/arquivos/ids/5761904-400-400/Patinete-Dobravel-Com-Led---Jurassic-World---Jw-T-rex----Laranja---Froes-0.jpg?v=638209680866200000')" onmouseout="restoreImage(this, 'https://rihappy.vtexassets.com/arquivos/ids/5761905-400-400/Patinete-Dobravel-Com-Led---Jurassic-World---Jw-T-rex----Laranja---Froes-1.jpg?v=638209680876070000')">
+  </div>
+  <h3>patinete dobravél</h3>
+  <p>R$ 169,99</p>
+  <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
+
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://rihappy.vtexassets.com/arquivos/ids/4806750-400-400/100583494_2.jpg?v=638002661202400000" alt="Produto 6" class="product-image" onmouseover="changeImage(this, 'https://rihappy.vtexassets.com/arquivos/ids/4806749-400-400/100583494_1.jpg?v=638002661199900000')" onmouseout="restoreImage(this, 'https://rihappy.vtexassets.com/arquivos/ids/4806750-400-400/100583494_2.jpg?v=638002661202400000')">
+  </div>
+  <h3>baby alive</h3>
+  <p>R$ 79,99</p>
+  <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
+
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://img.ltwebstatic.com/images3_pi/2022/12/09/16705749740574239875aa6440d10e6708d9ba7923_thumbnail_600x.webp" alt="Produto 6" class="product-image" onmouseover="changeImage(this, 'https://img.ltwebstatic.com/images3_pi/2022/12/10/167064508541fd75be9bb3561196a4e3335a73a314_thumbnail_600x.webp')" onmouseout="restoreImage(this, 'https://img.ltwebstatic.com/images3_pi/2022/12/09/16705749740574239875aa6440d10e6708d9ba7923_thumbnail_600x.webp')">
+  </div>
+  <h3>tênis skatista</h3>
+  <p>R$ 69,99</p>
+  <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
+
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://img.ltwebstatic.com/gspCenter/goodsImage/2023/5/10/4107438940_1058976/fc8a4700-df2a-438f-9c0e-c2f899063932/A9DF2E0CB1380AA6CF63C8E6EBAA787D_thumbnail_600x.jpg" alt="Produto 6" class="product-image" onmouseover="changeImage(this, 'https://img.ltwebstatic.com/gspCenter/goodsImage/2023/5/10/4107438940_1058976/01c31dfc-a93a-476c-9d2b-010ffd3fd8b9/1E01A5E7546C4E9CD11E9CA3C81B6310_thumbnail_600x.jpg')" onmouseout="restoreImage(this, 'https://img.ltwebstatic.com/gspCenter/goodsImage/2023/5/10/4107438940_1058976/fc8a4700-df2a-438f-9c0e-c2f899063932/A9DF2E0CB1380AA6CF63C8E6EBAA787D_thumbnail_600x.jpg')">
+  </div>
+  <h3>bota coturno</h3>
+  <p>R$ 69,99</p>
+  <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
+
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://img.ltwebstatic.com/images3_spmp/2023/05/30/1685398550b90f7e15fd64ec2ec7b11cf08661788b_thumbnail_600x.png" alt="Produto 6" class="product-image" onmouseover="changeImage(this, 'https://img.ltwebstatic.com/images3_spmp/2023/05/30/16853985642579c9502da3840f4a540b897241f06e_thumbnail_600x.png')" onmouseout="restoreImage(this, 'https://img.ltwebstatic.com/images3_spmp/2023/05/30/1685398550b90f7e15fd64ec2ec7b11cf08661788b_thumbnail_600x.png')">
+  </div>
+  <h3>sandálias de brilho</h3>
+  <p>R$ 69,99</p>
+  <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
+
+<div class="product">
+  <div class="image-wrapper">
+    <img src="https://img.ltwebstatic.com/images3_spmp/2023/06/02/1685635792f74f5c7db85ff7327f2d4f340d126f55_square_thumbnail_600x.jpg" alt="Produto 6" class="product-image" onmouseover="changeImage(this, 'https://img.ltwebstatic.com/images3_spmp/2023/06/02/1685635803da1567bd5a6f3edfa970ecaaa576e65c_square_thumbnail_600x.jpg')" onmouseout="restoreImage(this, 'https://img.ltwebstatic.com/images3_spmp/2023/06/02/1685635792f74f5c7db85ff7327f2d4f340d126f55_square_thumbnail_600x.jpg')">
+  </div>
+  <h3>sapatênis masculino</h3>
+  <p>R$ 69,99</p>
+  <button class="add-to-cart">Adicionar ao carrinho</button>
+</div>
+
+<a href="#" class="next-button">
+  Próxima <i class="fas fa-chevron-right"></i>
+</a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+
+
+ 
 </div>
 
 
